@@ -1,0 +1,70 @@
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  line-height: 2.1rem;
+  font-weight: 400;
+}
+.orange {
+  color: #dba000;
+  font-weight: 500;
+}
+.lightgray {
+  color: #7e8489;
+}
+.uppercase {
+  text-transform: uppercase;
+}
+.subtitle {
+  color: #7e8489;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  font-weight: 500;
+}
+.space2 {
+  padding-top: 16px;
+  padding-bottom: 16px;
+}
+.space3 {
+  margin-top: 32px;
+  margin-bottom: 32px;
+}
+.vspace {
+  height: 3.5rem;
+}
+p {
+  text-align: justify;
+}
+/* Style the tab */
+.tab {
+  overflow-x: auto;
+  white-space: nowrap;
+}
+/* Style the buttons that are used to open the tab content */
+.tab button {
+  background-color: #fff;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  padding: 14px 16px;
+  transition: 0.3s;
+  display: inline-block;
+  border-bottom: 2px solid #ffe8a8;
+}
+/* Change background color of buttons on hover */
+.tab button:hover {
+  background-color: #fafafa;
+  font-weight: 500;
+}
+/* Create an active/current tablink class */
+.tab button.active {
+  border-bottom: 2px solid #d19900;
+}
+/* Style the tab content */
+.tabcontent {
+  display: none;
+  padding: 6px 12px;
+  border-top: none;
+}
