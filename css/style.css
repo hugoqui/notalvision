@@ -103,27 +103,31 @@ p {
   stroke: #FFFFFF;
 }
 .st7 {
-  fill: #5147B0;
+  fill: url(#SVGID_8_);
 }
 .st8 {
-  fill: #FFFFFF;
+  opacity: 0.17;
+  fill: url(#SVGID_9_);
 }
 .st9 {
-  font-family: 'Helvetica';
+  fill: #FFFFFF;
 }
 .st10 {
-  font-size: 19.6128px;
+  font-family: 'Helvetica';
 }
 .st11 {
-  font-family: 'MicrosoftSansSerif';
+  font-size: 19.6128px;
 }
 .st12 {
-  font-size: 18.7188px;
+  font-family: 'MicrosoftSansSerif';
 }
 .st13 {
-  letter-spacing: 1.1;
+  font-size: 18.7188px;
 }
 .st14 {
+  letter-spacing: 1.1;
+}
+.st15 {
   font-size: 17.8266px;
 }
 a {
