@@ -1,56 +1,58 @@
 @orange: #dba000;
 @lightgray: #7e8489;
-@white:#fff;
-
-
+@white: #fff;
 @margin-measure: 8px;
 @vspace: 3.5rem;
-
-
-h1,h2,h3,h4,h5,h6{
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
     line-height: 2.1rem;
     font-weight: 400;
 }
 
-.orange{
+.orange {
     color: @orange;
     font-weight: 500;
 }
 
-.lightgray{
+.lightgray {
     color: @lightgray;
 }
 
-.uppercase{
+.uppercase {
     text-transform: uppercase;
 }
 
-.subtitle{
+.subtitle {
     .lightgray();
     .uppercase();
     letter-spacing: 2px;
     font-weight: 500;
 }
 
-.space2{
+.space2 {
     padding-top: @margin-measure * 2;
     padding-bottom: @margin-measure * 2;
 }
 
-.space3{
+.space3 {
     margin-top: @margin-measure * 4;
     margin-bottom: @margin-measure * 4;
 }
 
-.vspace{
+.vspace {
     height: @vspace;
 }
 
-p{
+p {
     text-align: justify;
 }
 
 /* Style the tab */
+
 .tab {
     // overflow: hidden;
     overflow-x: auto;
@@ -58,34 +60,142 @@ p{
 }
 
 /* Style the buttons that are used to open the tab content */
+
 .tab button {
-    background-color: @white;
-    // float: left;
+    background-color: @white; // float: left;
     border: none;
     outline: none;
     cursor: pointer;
     padding: 14px 16px;
     transition: 0.3s;
     display: inline-block;
-    border-bottom: 2px solid lighten(@orange,40);
+    border-bottom: 2px solid lighten(@orange, 40);
 }
 
 /* Change background color of buttons on hover */
+
 .tab button:hover {
-    background-color: darken(@white,2);
+    background-color: darken(@white, 2);
     font-weight: 500;
 }
 
 /* Create an active/current tablink class */
+
 .tab button.active {
     // background-color: #ccc;
-    border-bottom: 2px solid darken(@orange,2)  ;
+    border-bottom: 2px solid darken(@orange, 2);
 }
 
 /* Style the tab content */
+
 .tabcontent {
     display: none;
     padding: 6px 12px;
-    
     border-top: none;
+}
+
+/* Chart Pie */
+
+@base: #A5E2F3;
+.menu {
+    padding: 0;
+    list-style: none;
+    position: relative;
+    margin: 30px auto;
+    width: 70%;
+    height: 0;
+    padding-top: 70%;
+    border-radius: 50%;
+    background-image: linear-gradient(to right, #82cd5d , #2a9bb6);
+}
+
+@media all and (max-width: 320px) {
+    .menu {
+        width: 230px;
+        height: 230px;
+        padding: 0;
+    }
+}
+
+@media all and (min-width: 700px) {
+    .menu {
+        width: 500px;
+        height: 500px;
+        padding: 0;
+    }
+}
+
+.menu li {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    clip-path: url(#sector);
+    /* try this one in Chrome/Opera/Safari */
+    /* clip-path: polygon(50% 50%, 100% 50%, 75% 6.6%); */
+    a {
+        display: block;
+        width: 100%;
+        height: 100%;
+        
+    }
+    &:hover {
+        background-color: gold;
+    }
+}
+
+.one {
+    // background-color: @base;
+    transform: rotate(0deg);
+    
+}
+
+.two {
+    // background-color: darken(@base, 7%);
+    transform: rotate(-51deg);
+}
+
+.three {
+    background-color: darken(@base, 14%);
+    transform: rotate(-102deg);
+}
+
+.four {
+    background-color: darken(@base, 21%);
+    transform: rotate(-153deg);
+}
+
+.five {
+    background-color: darken(@base, 28%);
+    transform: rotate(-204deg);
+}
+
+.six {
+    background-color: darken(@base, 35%);
+    transform: rotate(-255deg);
+}
+
+.seven {
+    background-color: darken(@base, 45%);
+    transform: rotate(-306deg);
+}
+
+.icon {
+    position: absolute;
+    /* exact values here depend on what you are placing inside the items (icon, image, text, etc.) */
+    right: 15%;
+    top: 30%;
+    /* make sure it it rotated enough; angle of rotation = angle of the sector itself */
+    transform: rotate(60deg);
+    /* style further as needed */
+    color: darken(@base, 60%);
+    font-family: Indie Flower;
+    font-size: 25px;
+}
+
+p {
+    text-align: center;
+    width: 80%;
+    margin: 0 auto;
 }

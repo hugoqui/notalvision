@@ -68,3 +68,90 @@ p {
   padding: 6px 12px;
   border-top: none;
 }
+/* Chart Pie */
+.menu {
+  padding: 0;
+  list-style: none;
+  position: relative;
+  margin: 30px auto;
+  width: 70%;
+  height: 0;
+  padding-top: 70%;
+  border-radius: 50%;
+  background-image: linear-gradient(to right, #82cd5d, #2a9bb6);
+}
+@media all and (max-width: 320px) {
+  .menu {
+    width: 230px;
+    height: 230px;
+    padding: 0;
+  }
+}
+@media all and (min-width: 700px) {
+  .menu {
+    width: 500px;
+    height: 500px;
+    padding: 0;
+  }
+}
+.menu li {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  clip-path: url(#sector);
+  /* try this one in Chrome/Opera/Safari */
+  /* clip-path: polygon(50% 50%, 100% 50%, 75% 6.6%); */
+}
+.menu li a {
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+.menu li:hover {
+  background-color: gold;
+}
+.one {
+  transform: rotate(0deg);
+}
+.two {
+  transform: rotate(-51deg);
+}
+.three {
+  background-color: #66ceeb;
+  transform: rotate(-102deg);
+}
+.four {
+  background-color: #47c4e6;
+  transform: rotate(-153deg);
+}
+.five {
+  background-color: #27b9e2;
+  transform: rotate(-204deg);
+}
+.six {
+  background-color: #1ba4cb;
+  transform: rotate(-255deg);
+}
+.seven {
+  background-color: #15809d;
+  transform: rotate(-306deg);
+}
+.icon {
+  position: absolute;
+  /* exact values here depend on what you are placing inside the items (icon, image, text, etc.) */
+  right: 15%;
+  top: 30%;
+  /* make sure it it rotated enough; angle of rotation = angle of the sector itself */
+  transform: rotate(60deg);
+  /* style further as needed */
+  color: #0c495a;
+  font-family: Indie Flower;
+  font-size: 25px;
+}
+p {
+  text-align: center;
+  width: 80%;
+  margin: 0 auto;
+}
