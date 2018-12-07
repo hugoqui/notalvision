@@ -7,6 +7,9 @@ h6 {
   line-height: 2.1rem;
   font-weight: 400;
 }
+.purple {
+  color: #4539a4 !important;
+}
 .orange {
   color: #dba000;
   font-weight: 500;
@@ -68,67 +71,40 @@ p {
   padding: 6px 12px;
   border-top: none;
 }
+@keyframes bubble {
+  0% {
+    position: absolute;
+    opacity: 0;
+    top: 100px;
+  }
+  100% {
+    position: absolute;
+    opacity: 1;
+    top: 0px;
+  }
+}
+.bubble {
+  animation: bubble 900ms;
+}
+.paragraph {
+  animation: bubble 900ms;
+}
+.paragraph .subtitle {
+  margin-bottom: 2rem;
+}
 /* Chart Pie */
+#paragraph2,
+#paragraph3,
+#paragraph4,
+#paragraph5,
+#paragraph6,
+#paragraph7 {
+  display: none;
+}
 #menu {
   display: block;
   margin: 0 auto;
   /*overflow: visible; /* uncomment this if you are using bouncing animations*/
-}
-.st0 {
-  fill: url(#SVGID_1_);
-  stroke: #FFFFFF;
-}
-.st1 {
-  fill: url(#SVGID_2_);
-  stroke: #FFFFFF;
-}
-.st2 {
-  fill: url(#SVGID_3_);
-  stroke: #FFFFFF;
-}
-.st3 {
-  fill: url(#SVGID_4_);
-  stroke: #FFFFFF;
-}
-.st4 {
-  fill: url(#SVGID_5_);
-  stroke: #FFFFFF;
-}
-.st5 {
-  fill: url(#SVGID_6_);
-  stroke: #FFFFFF;
-}
-.st6 {
-  fill: url(#SVGID_7_);
-  stroke: #FFFFFF;
-}
-.st7 {
-  fill: url(#SVGID_8_);
-}
-.st8 {
-  opacity: 0.17;
-  fill: url(#SVGID_9_);
-}
-.st9 {
-  fill: #FFFFFF;
-}
-.st10 {
-  font-family: 'Helvetica';
-}
-.st11 {
-  font-size: 19.6128px;
-}
-.st12 {
-  font-family: 'MicrosoftSansSerif';
-}
-.st13 {
-  font-size: 18.7188px;
-}
-.st14 {
-  letter-spacing: 1.1;
-}
-.st15 {
-  font-size: 17.8266px;
 }
 a {
   cursor: pointer;
@@ -150,4 +126,58 @@ a {
 .menu-trigger:hover,
 .menu-trigger:focus {
   cursor: pointer;
+}
+.st0 {
+  fill: url(#SVGID_1_);
+}
+.st1 {
+  opacity: 0.7;
+}
+.st2 {
+  fill: url(#SVGID_2_);
+}
+.st3 {
+  fill: url(#SVGID_3_);
+}
+.st4 {
+  fill: url(#SVGID_4_);
+}
+.st5 {
+  fill: url(#SVGID_5_);
+}
+.st6 {
+  fill: url(#SVGID_6_);
+}
+.st7 {
+  fill: url(#SVGID_7_);
+}
+.st8 {
+  fill: url(#SVGID_8_);
+}
+.st9 {
+  fill: url(#SVGID_9_);
+}
+.st10 {
+  fill: #FFFFFF;
+}
+.st11 {
+  font-family: 'Helvetica';
+}
+.st12 {
+  font-size: 19.6128px;
+}
+.st13 {
+  font-family: 'MicrosoftSansSerif';
+}
+.st14 {
+  font-size: 18.7188px;
+}
+.st15 {
+  letter-spacing: 1.1;
+}
+.st16 {
+  font-size: 17.8266px;
+}
+.st17 {
+  fill: none;
 }

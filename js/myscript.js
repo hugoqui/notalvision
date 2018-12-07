@@ -11,3 +11,12 @@ function showDetails(evt, program) {
     document.getElementById(program).style.display = "block";
     evt.currentTarget.className += " active";
 }
+
+function showProgram(program) {
+    tabcontent = document.getElementsByClassName("paragraph");
+    for (i = 0; i < tabcontent.length; i++) {        
+        tabcontent[i].style.display = "none";
+    }
+    document.getElementById(program).style.display = "block";
+
+}
