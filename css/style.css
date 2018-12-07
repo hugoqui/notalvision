@@ -72,8 +72,7 @@ p {
 #menu {
   display: block;
   margin: 0 auto;
-  /*overflow: visible;*/
-  /* uncomment this if you are using bouncing animations*/
+  /*overflow: visible; /* uncomment this if you are using bouncing animations*/
 }
 a {
   cursor: pointer;
@@ -83,15 +82,13 @@ a {
 /* You can change these default styles any way you want */
 .item .sector {
   transition: all .1s linear;
-  fill: #fff;
-  stroke: #111;
 }
 .item:hover .sector,
 .item:focus .sector {
-  fill: #eee;
+  fill: #7dc8bc;
 }
 .menu-trigger {
-  fill: #EA2A55;
+  fill: #5147b0;
   pointer-events: auto;
   /* KEEP THIS to make sure it stays clickable even when SVG's pointer events is disabled */
 }
