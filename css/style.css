@@ -69,84 +69,37 @@ p {
   border-top: none;
 }
 /* Chart Pie */
-.menu {
-  padding: 0;
-  list-style: none;
-  position: relative;
-  margin: 30px auto;
-  width: 70%;
-  height: 0;
-  padding-top: 70%;
-  border-radius: 50%;
-  background-image: linear-gradient(to right, #82cd5d, #2a9bb6);
-}
-@media all and (max-width: 320px) {
-  .menu {
-    width: 230px;
-    height: 230px;
-    padding: 0;
-  }
-}
-@media all and (min-width: 700px) {
-  .menu {
-    width: 500px;
-    height: 500px;
-    padding: 0;
-  }
-}
-.menu li {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  clip-path: url(#sector);
-  /* try this one in Chrome/Opera/Safari */
-  /* clip-path: polygon(50% 50%, 100% 50%, 75% 6.6%); */
-}
-.menu li a {
+#menu {
   display: block;
-  width: 100%;
-  height: 100%;
-}
-.menu li:hover {
-  background-color: rgba(255, 255, 255, 0.3);
-}
-.one {
-  transform: rotate(0deg);
-}
-.two {
-  transform: rotate(-51deg);
-}
-.three {
-  transform: rotate(-102deg);
-}
-.four {
-  transform: rotate(-153deg);
-}
-.five {
-  transform: rotate(-204deg);
-}
-.six {
-  transform: rotate(-255deg);
-}
-.seven {
-  transform: rotate(-306deg);
-}
-.icon {
-  position: absolute;
-  /* exact values here depend on what you are placing inside the items (icon, image, text, etc.) */
-  right: 15%;
-  top: 30%;
-  /* make sure it it rotated enough; angle of rotation = angle of the sector itself */
-  transform: rotate(60deg);
-  /* style further as needed */
-  color: #0c495a;
-  font-family: Indie Flower;
-  font-size: 25px;
-}
-p {
-  text-align: center;
-  width: 80%;
   margin: 0 auto;
+  /*overflow: visible;*/
+  /* uncomment this if you are using bouncing animations*/
+}
+a {
+  cursor: pointer;
+  /* SVG &lt;a&gt; elements don't get this by default, so you need to explicitly set it */
+  outline: none;
+}
+/* You can change these default styles any way you want */
+.item .sector {
+  transition: all .1s linear;
+  fill: #fff;
+  stroke: #111;
+}
+.item:hover .sector,
+.item:focus .sector {
+  fill: #eee;
+}
+.menu-trigger {
+  fill: #EA2A55;
+  pointer-events: auto;
+  /* KEEP THIS to make sure it stays clickable even when SVG's pointer events is disabled */
+}
+.menu-trigger:hover,
+.menu-trigger:focus {
+  cursor: pointer;
+}
+symbol {
+  overflow: visible;
+  /* KEEP THIS so that text will not get cut off it it is wider than the icon width */
 }
